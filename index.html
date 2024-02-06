@@ -5,10 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Sketch</title>
+    <script src="scripts/scripts.js" defer></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Pixelify+Sans:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Noto+Sans&family=Pixelify+Sans:wght@700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <div class="artContent">
+        <div class="leftSide">
+            <p id="sliderValue"></p>
+            <input autocomplete="off" type="range" min="1" max="100" value="16" class="slider" id="mySlider">
+            <div class="colorPickerContainer">
+                <label for="colorpicker">COLOR PICKER</label>
+                <input type="color" id="colorPicker">
+            </div>
 
+            <button id="clearButton">CLEAR</button>
+            <button id="showBorderButton">SHOW BORDER</button>
+        </div>
+        <div id="rightSide" class="rightSide">
+            <h1>Pixel Sketch</h1>
+        </div>
+    </div>
+    <div class="invisibleDiv"></div>
 </body>
 
 </html>
