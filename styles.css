@@ -1,0 +1,79 @@
+.border {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    background-color: #36393e;
+    color: grey;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+.artContent {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftSide {
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+        margin: 0;
+    }
+
+}
+
+.rightSide {
+    h1 {
+        margin: 5% 0;
+        font-family: 'Pixelify Sans';
+        font-size: 40px;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#colorPicker {
+    border: none;
+    background-color: #36393e;
+    height: 60px;
+    width: 100px;
+}
+
+.colorPickerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#clearButton,
+#showBorderButton {
+    align-self: center;
+    width: 120px;
+    padding: 5px 0;
+    background-color: #36393e;
+    border: 3px solid grey;
+    color: grey;
+}
+
+#clearButton:hover,
+#showBorderButton:hover {
+    cursor: pointer;
+    border-color: rgb(167, 167, 167);
+}
